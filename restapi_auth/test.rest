@@ -1,0 +1,52 @@
+# POST http://localhost:3000/student
+# Content-Type: application/json 
+
+#     {
+#     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InBla2thIiwiaXNhZG1pbiI6dHJ1ZSwiaWF0IjoxNzQ4NDMwNjM5LCJleHAiOjE3NDg0NDUwMzl9.2PBrOKMbByK1xW_e7x6T_T1s5KIGBnA9x0EON2xwA_4",
+#     "studentcode": "z1234",
+#     "name": "Z opiskelija",
+#     "email": "z1234@jamk.fi",
+#     "studypoints": 0,
+#     "grades": [
+#     ]
+  #  }
+#  post http://localhost:3000/student/studentcode/z1234 
+# Content-Type: application/json 
+
+# {  
+# "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InBla2thIiwiaXNhZG1pbiI6dHJ1ZSwiaWF0IjoxNzQ4NDMwNjM5LCJleHAiOjE3NDg0NDUwMzl9.2PBrOKMbByK1xW_e7x6T_T1s5KIGBnA9x0EON2xwA_4",
+# "coursecode": "HTKP-1001",
+#   "grade": "3"
+# }
+# PUT http://localhost:3000/student/studentcode/z1234
+# Content-Type: application/json 
+
+# {
+#   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InBla2thIiwiaXNhZG1pbiI6dHJ1ZSwiaWF0IjoxNzQ4NDMwNjM5LCJleHAiOjE3NDg0NDUwMzl9.2PBrOKMbByK1xW_e7x6T_T1s5KIGBnA9x0EON2xwA_4",
+#   "coursecode": "HTKP-1001",
+#   "grade": "5"
+# }
+# GET http://localhost:3000/student/grades/HTKP-1001
+# Content-Type: application/json 
+# POST http://localhost:3000/users/register
+# Content-Type: application/json 
+
+# {
+#   "username": "pekka",
+#   "password": "pekka123",
+#   "isadmin": true
+# }
+
+# POST http://localhost:3000/users/login
+# Content-Type: application/json 
+
+# {
+#   "username": "pekka",
+#   "password": "pekka123"
+# }
+DELETE http://localhost:3000/student/z1234
+Content-Type: application/json 
+
+{
+ "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InBla2thIiwiaXNhZG1pbiI6dHJ1ZSwiaWF0IjoxNzQ4NDMwNjM5LCJleHAiOjE3NDg0NDUwMzl9.2PBrOKMbByK1xW_e7x6T_T1s5KIGBnA9x0EON2xwA_4"
+}
