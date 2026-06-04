@@ -44,9 +44,12 @@
 #   "username": "pekka",
 #   "password": "pekka123"
 # }
-DELETE http://localhost:3000/student/z1234
-Content-Type: application/json 
+
+POST http://localhost:3000/users/registerUser
+Content-Type: application/json
 
 {
- "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InBla2thIiwiaXNhZG1pbiI6dHJ1ZSwiaWF0IjoxNzQ4NDMwNjM5LCJleHAiOjE3NDg0NDUwMzl9.2PBrOKMbByK1xW_e7x6T_T1s5KIGBnA9x0EON2xwA_4"
+  "username": "user1",
+  "password": "password123",
+  "isadmin": true
 }
